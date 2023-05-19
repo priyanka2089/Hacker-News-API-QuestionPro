@@ -21,7 +21,7 @@ public class ItemsController {
 	IItemsService iItemsService;
 	
 	
-	// return top 10 stories
+	// returns top 10 stories
 	@RequestMapping(value="/top-stories",method=RequestMethod.GET)
 	public List<StoriesDTO> getTopStories() {
 		
@@ -29,7 +29,7 @@ public class ItemsController {
 		return list;
 	}
 	
-	// return past stories which 
+	// returns past stories which 
 	@RequestMapping(value="/past-stories",method=RequestMethod.GET)
 	public List<StoriesDTO> getPastStories() {
 		
